@@ -1,4 +1,5 @@
-module "prod" {
-  source  = "spacelift.io/peterdeme/prod/module"
-  version = "0.1.0"
+resource "random_string" "random" {
+  length           = 42
+  special          = true
+  override_special = "/@£$"
 }
